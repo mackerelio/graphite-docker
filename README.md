@@ -1,16 +1,9 @@
 graphite-docker
 ===============
 
-Graphite docker image.
+Graphite image for Docker
 
-## graphite-web
-
-```shell
-$ docker run --name graphite-web -d mackerel/graphite-web
-```
-
-## carbon-cache
 
 ```shell
-$ docker run --name carbon-cache -d mackerel/carbon-cache
+$ docker run --name graphite -d mackerel/graphite
 ```
