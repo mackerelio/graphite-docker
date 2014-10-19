@@ -51,5 +51,6 @@ ENV LC_ALL en_US.UTF-8
 RUN python /var/lib/graphite/lib/graphite/manage.py syncdb --noinput
 
 EXPOSE 8000 2003 2004 7002
+VOLUME /var/log/graphite /var/lib/graphite/storage/whisper
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
